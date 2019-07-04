@@ -7,10 +7,10 @@ import sagas from "./sagas";
 const { createSagaMonitor, createEnhancer } = console.tron;
 console.log("INICIANDO STORE", createSagaMonitor, createEnhancer);
 
-const sagaMonitor = createSagaMonitor ? { createSagaMonitor() } : {};
+const sagaMonitor = createSagaMonitor && createSagaMonitor();
 
 // create the saga middleware
-const sagaMiddleware = createSagaMiddleware(sagaMonitor);
+const sagaMiddleware = createSagaMiddleware(sagaMonitor && {});
 
 const middlewares = [];
 middlewares.push(sagaMiddleware);
