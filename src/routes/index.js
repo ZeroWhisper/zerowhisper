@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Login from "pages/Login";
+import Welcome from "pages/Welcome";
 
 // import Header from "../components/Header";
 // import Footer from "../components/Footer";
@@ -12,6 +13,7 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Login} />
+        <Route exact path="/welcome" component={Welcome} />
         {/* <Route exact path="/" component={Teste} /> */}
         {/* <Route exact path="/" component={Main} /> */}
       </Switch>

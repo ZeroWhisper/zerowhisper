@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #1A854D;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Open Sans Condensed', sans-serif;
