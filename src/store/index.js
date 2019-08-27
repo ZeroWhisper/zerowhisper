@@ -1,7 +1,7 @@
 import { createStore, compose, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 
-import Reactotron from "config/ReactotronConfig";
+import Reactotron from "config/reactotron";
 
 import reducers from "./ducks";
 import sagas from "./sagas";
