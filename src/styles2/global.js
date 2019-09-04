@@ -12,12 +12,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
-  .flexFull {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-
   /* Change the white to any color ;) */
   input:-webkit-autofill,
   input:-webkit-autofill:hover,

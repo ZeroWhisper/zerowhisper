@@ -3,9 +3,7 @@
     "target": "es6",
     "baseUrl": "./src",
     "paths": {
-      "*": ["*"],
-      "~/*": ["*"],
-      "@/*": ["*"]
+      "~/*": ["*"]
     }
   },
   "exclude": ["node_modules", "build", "./node_modules", "**/node_modules/*"],

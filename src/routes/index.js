@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Login from "pages/Login";
-import Welcome from "pages/Welcome";
+import Login from "~/pages/Login";
+import Welcome from "~/pages/Welcome";
 
 const Routes = () => {
   return (
