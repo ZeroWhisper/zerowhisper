@@ -1,25 +1,48 @@
 {
-  "name": "zerowhisper",
+  "name": "react-typescript",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "ndev": "next dev -p 5000",
+    "nbuild": "next build",
+    "nstart": "next start",
+    "stp": "react-app-rewired start PORT=80",
     "st": "react-app-rewired start",
-    "build": "react-scripts build",
+    "st5000": "react-app-rewired start PORT=5000",
     "bld": "react-app-rewired build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "tst": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "_eject": "react-scripts eject",
+    "cc": "concurrently --kill-others-on-fail \"yarn ndev\" \"yarn st\""
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.1",
-    "redux-saga": "^1.0.5",
-    "styled-components": "^4.3.2"
+    "@elastic/datemath": "^5.0.3",
+    "@elastic/eui": "^24.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "axios": "^0.19.2",
+    "google-spreadsheet": "^3.0.13",
+    "lz-string": "^1.4.4",
+    "moment": "^2.26.0",
+    "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.1",
+    "react-google-login": "^5.1.20",
+    "react-icons": "^3.10.0",
+    "react-phaser-fiber": "^0.2.4",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "styled-components": "^5.1.0",
+    "typesafe-actions": "^5.1.0",
+    "typescript": "~3.7.2"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,13 +60,18 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.12.1",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "babel-plugin-root-import": "^6.4.1",
-    "customize-cra": "^0.5.0",
-    "react-app-rewired": "^2.1.3",
-    "reactotron-react-js": "^3.3.2",
-    "reactotron-redux": "^3.1.1",
-    "reactotron-redux-saga": "^4.2.2"
+    "@types/lz-string": "^1.3.34",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/redux-saga": "^0.10.5",
+    "@types/styled-components": "^5.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "concurrently": "^5.3.0",
+    "customize-cra": "^0.9.1",
+    "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.6",
+    "reactotron-react-js": "^3.3.7",
+    "reactotron-redux": "^3.1.3",
+    "reactotron-redux-saga": "^4.2.3"
   }
 }

@@ -1,5 +1,10 @@
-const path = require("path");
-const { override, addBabelPlugin } = require("customize-cra");
+// const path = require("path");
+
+const {
+  override,
+  addBabelPlugin,
+  addWebpackModuleRule
+} = require("customize-cra");
 
 const moduleResolver = [
   "babel-plugin-module-resolver",
@@ -11,4 +16,24 @@ const moduleResolver = [
   }
 ];
 
-module.exports = override(addBabelPlugin(moduleResolver));
+const fontLoad = {
+  rules: [
+    {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "fonts/"
+          }
+        }
+      ]
+    }
+  ]
+};
+
+module.exports = override(
+  addBabelPlugin(moduleResolver)
+  // addWebpackModuleRule(fontLoad)
+);
