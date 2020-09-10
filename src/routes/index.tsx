@@ -11,6 +11,7 @@ import ClickExample from '~/pages/ClickExample';
 import YTFake from '~/pages/YTFake';
 import Trello from '~/pages/Trello';
 import GeekDashboard from '~/pages/GeekDashboard';
+import ZeroWhisper from '~/pages/ZeroWhisper';
 
 // import styles from './style';
 
@@ -18,7 +19,8 @@ const Routes: React.FC = props => {
   return (
     <Switch>
       <Route exact path={'/'}>
-        <Rocketseat />
+        {/* <Rocketseat /> */}
+        <ZeroWhisper />
       </Route>
       <Route path={'/geek'}>
         <GeekDashboard />
@@ -40,6 +42,9 @@ const Routes: React.FC = props => {
       </Route>
       <Route path={'/ytfake'}>
         <YTFake />
+      </Route>
+      <Route path={'/rocket'}>
+        <Rocketseat />
       </Route>
     </Switch>
   );
