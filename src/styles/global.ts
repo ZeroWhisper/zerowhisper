@@ -35,15 +35,15 @@ export default createGlobalStyle`
 
   body, input, button {
     font-size: 16px;
-    font-family: ${fonts.general}, Roboto, Helvetica, sans-serif;
-    /* letter-spacing: 2.5px; */
+    font-family: ${fonts.roboto}, ${fonts.general}, Helvetica, sans-serif;
+    letter-spacing: 1.6px;
     font-weight: 100;
   }
 
   body {
     /* Geek */
     /* background-color: #181A1B; */
-    background-color: ${colors.background.weak};
+    /* background-color: ${colors.background.weak}; */
     color: ${colors.fonts.primary};
 
     /* background-color: #eaeaea; */
@@ -59,6 +59,8 @@ export default createGlobalStyle`
     /* background-color: #fcf133; */
     /* background-color: #ff3a40; */
     -webkit-font-smoothing: antialiased;
+    /* background-image: linear-gradient(45deg, #30384B, #323FFF, #30384B); */
+    background-image: linear-gradient(90deg, #104A70, #30384B);
     /* display: flex; */
     /* flex: 1; */
     /* width: 100%; */

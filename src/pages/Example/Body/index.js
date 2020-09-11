@@ -6,10 +6,11 @@ import Desc from './Desc';
 import * as S from './style';
 // background-image: linear-gradient(red, yellow);
 
-const Body = props => {
+const Body = () => {
   return (
     <S.Container>
-      <h3>console.log....</h3>
+      {/* <h3>console.log....</h3> */}
+      <h2>Marcos Roberto Cordeiro</h2>
       <section>
         <span>
           <Photo />

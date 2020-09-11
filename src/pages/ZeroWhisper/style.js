@@ -9,5 +9,5 @@ export const Container = styled.div`
 
   /* background-color: #0d111d; */
   /* background-image: linear-gradient(red, yellow); */
-  background-image: linear-gradient(#181f30, #354054);
+  background-image: linear-gradient(45deg, #181f30, #354054);
 `;

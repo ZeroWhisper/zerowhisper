@@ -4,11 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
 
-  padding: 20px 10px;
-  /* margin: 0 10px; */
-
-  /* height: 100%; */
-  /* width: 100%; */
+  padding: 20px 5px;
 
   justify-content: center;
   align-items: center;
@@ -17,5 +13,7 @@ export const Container = styled.div`
     height: 200px;
     width: auto;
     border-radius: 50%;
+
+    cursor: pointer;
   }
 `;

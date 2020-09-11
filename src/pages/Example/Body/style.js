@@ -5,15 +5,14 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
 
-  padding: 10px;
-
   justify-content: center;
   flex-direction: column;
 
-  max-width: 1000px;
+  /* border: 1px solid gold; */
 
-  h3 {
-    border: 1px solid red;
+  h2 {
+    /* border: 1px solid red; */
+    padding: 15px 0;
   }
 
   section {

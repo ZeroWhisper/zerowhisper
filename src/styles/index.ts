@@ -13,3 +13,12 @@ export const css_box_shadow = css`
 export const css_box_shadow_blue = css`
   box-shadow: rgb(0, 115, 183) 0px 0px 6px;
 `;
+
+export const css_width_page = css`
+  display: flex;
+  flex: 1;
+
+  max-width: 1100px;
+
+  align-items: center;
+`;
