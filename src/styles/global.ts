@@ -36,6 +36,7 @@ export default createGlobalStyle`
   body, input, button {
     font-size: 16px;
     font-family: ${fonts.roboto}, ${fonts.general}, Helvetica, sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
     letter-spacing: 1.6px;
     font-weight: 100;
   }
@@ -69,6 +70,18 @@ export default createGlobalStyle`
 
   a, u {
     text-decoration: none;
+  }
+
+  a {
+    /* color: #0060B6; */
+    color: #eaeaea;
+    text-decoration: none;
+  }
+
+  a:hover {
+    /* color:#00A0C6; */
+    text-decoration:none;
+    cursor:pointer;
   }
 
   button {

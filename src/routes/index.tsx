@@ -8,8 +8,9 @@ import LoginJWT from '~/pages/LoginJWT';
 import StartGame from '~/pages/StartGame';
 import Example from '~/pages/Example';
 import ClickExample from '~/pages/ClickExample';
-import YTFake from '~/pages/YTFake';
+// import YTFake from '~/pages/YTFake';
 import Trello from '~/pages/Trello';
+import Hints from '~/pages/Hints';
 import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
 
@@ -40,8 +41,8 @@ const Routes: React.FC = props => {
       <Route path={'/click'}>
         <ClickExample />
       </Route>
-      <Route path={'/ytfake'}>
-        <YTFake />
+      <Route path={'/css'}>
+        <Hints />
       </Route>
       <Route path={'/rocket'}>
         <Rocketseat />

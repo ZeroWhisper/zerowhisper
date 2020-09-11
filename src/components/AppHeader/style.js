@@ -32,6 +32,10 @@ export const Container = styled.div`
         :nth-child(n) {
           margin-right: 20px;
         }
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
