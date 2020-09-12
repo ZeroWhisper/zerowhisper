@@ -13,6 +13,7 @@ import Trello from '~/pages/Trello';
 import Hints from '~/pages/Hints';
 import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
+import Contact from '~/pages/Contact';
 
 // import styles from './style';
 
@@ -46,6 +47,9 @@ const Routes: React.FC = props => {
       </Route>
       <Route path={'/rocket'}>
         <Rocketseat />
+      </Route>
+      <Route path={'/contact'}>
+        <Contact />
       </Route>
     </Switch>
   );

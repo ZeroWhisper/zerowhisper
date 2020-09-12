@@ -11,3 +11,7 @@ export const unstash = v => {
   const level_one = lz.decompress(level_two);
   return JSON.parse(level_one);
 };
+
+const a = {};
+
+console.log('INITIALIZING STASH', a);

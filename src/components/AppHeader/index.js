@@ -14,6 +14,9 @@ const AppHeader = props => {
           <li>
             <Link to={'/css'}>CSS</Link>
           </li>
+          <li>
+            <Link to={'/contact'}>CONTATO</Link>
+          </li>
         </ul>
       </div>
     </S.Container>
