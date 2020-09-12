@@ -3,6 +3,8 @@ import { createGlobalStyle, css } from 'styled-components';
 import colors from './colors';
 import fonts from './fonts';
 
+// Example: https://uploads-ssl.webflow.com/5b3b4765a040d03d43b86a70/5b8f81ef99b13e70ffa24b23_01%20colors.jpg
+
 export default createGlobalStyle`
   * {
     margin: 0;
