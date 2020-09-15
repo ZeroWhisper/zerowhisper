@@ -18,7 +18,7 @@ export const css_width_page = css`
   display: flex;
   flex: 1;
 
-  max-width: 1100px;
+  /* max-width: 1100px; */
 
-  align-items: center;
+  /* align-items: center; */
 `;

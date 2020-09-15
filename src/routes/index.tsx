@@ -10,7 +10,7 @@ import Example from '~/pages/Example';
 import ClickExample from '~/pages/ClickExample';
 // import YTFake from '~/pages/YTFake';
 import Trello from '~/pages/Trello';
-import Hints from '~/pages/Hints';
+import ExampleCSS from '~/pages/ExampleCSS';
 import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
 import Contact from '~/pages/Contact';
@@ -43,7 +43,7 @@ const Routes: React.FC = props => {
         <ClickExample />
       </Route>
       <Route path={'/css'}>
-        <Hints />
+        <ExampleCSS />
       </Route>
       <Route path={'/rocket'}>
         <Rocketseat />
