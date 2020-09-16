@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsStar } from 'react-icons/bs';
 
 import AppTemplate from '~/components/AppTemplate';
 
@@ -10,10 +11,37 @@ const ExampleCSS = () => {
       <S.Container>
         <div>Em construção</div>
         <S.ListGrid>
-          <div>x</div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>
+            <S.SpanBox1>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span>
+                <BsStar color={'blue'} />
+              </span>
+            </S.SpanBox1>
+          </div>
+          <div>
+            <S.SpanBox2>
+              <span>LOADING</span>
+              <span></span>
+            </S.SpanBox2>
+          </div>
+          <div>
+            <S.SpanBoxCustom1 onClick={() => alert('Hello World')}>
+              <span>
+                <div>Button</div>
+              </span>
+            </S.SpanBoxCustom1>
+          </div>
+          <div>
+            <S.SpanBoxCustom2>
+              <span></span>
+              <span></span>
+              <span></span>
+            </S.SpanBoxCustom2>
+          </div>
           <div></div>
           <div></div>
           <div></div>

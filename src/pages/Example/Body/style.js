@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import styled from 'styled-components/native';
 
 export const Container = styled.div`
   display: flex;
@@ -8,10 +7,9 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  /* border: 1px solid gold; */
+  border: 1px solid gold;
 
   h2 {
-    /* border: 1px solid red; */
     padding: 15px 0;
   }
 
