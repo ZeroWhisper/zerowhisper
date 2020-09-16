@@ -17,8 +17,20 @@ export const css_box_shadow_blue = css`
 export const css_width_page = css`
   display: flex;
   flex: 1;
+`;
 
-  /* max-width: 1100px; */
+export const css_display_flex_full = css`
+  display: flex;
+  flex: 1;
+`;
 
-  /* align-items: center; */
+export const css_margin_media_query = css`
+  margin: 0 10px;
+
+  @media only screen and (min-width: 600px) {
+    margin: 0 10%;
+  }
+  @media only screen and (min-width: 1000px) {
+    margin: 0 15%;
+  }
 `;
