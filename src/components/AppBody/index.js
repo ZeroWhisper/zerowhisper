@@ -5,7 +5,7 @@ import * as S from './style';
 const AppBody = ({ children }) => {
   return (
     <S.Container>
-      <section>{children}</section>
+      <div>{children}</div>
     </S.Container>
   );
 };

@@ -1,13 +1,15 @@
 import styled from 'styled-components';
-import { css_width_page } from '~/styles';
+import { css_width_page, css_margin_media_query } from '~/styles';
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
+  flex-direction: row;
 
-  justify-content: center;
+  /* justify-content: center; */
 
-  section {
+  ${css_margin_media_query}
+
+  div {
     ${css_width_page};
     padding: 10px;
   }
