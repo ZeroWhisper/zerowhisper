@@ -28,6 +28,11 @@ export default {
   startReactotronMiddleware: function (): SagaMiddleware {
     let sagaMiddleware = createSagaMiddleware();
 
+    console.log(
+      process.env.NODE_ENV,
+      'development',
+      process.env.NODE_ENV === 'development',
+    );
     if (process.env.NODE_ENV === 'development') {
       let tron = this.getInstanceReactotron();
 
