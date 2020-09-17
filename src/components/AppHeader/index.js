@@ -1,24 +1,19 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+
+import MindorHeader from './MinorHeader';
+import LargerHeader from './LargerHeader';
 
 import * as S from './style';
-import { Link } from 'react-router-dom';
 
 const AppHeader = props => {
+  // https://www.npmjs.com/package/react-responsive#easy-mode
+  const isMobile = useMediaQuery({ maxWidth: 400 });
+  // return isMobile ? children : null
+
   return (
     <S.Container>
-      <div>
-        <ul>
-          <li>
-            <Link to={'/example'}>HOME</Link>
-          </li>
-          <li>
-            <Link to={'/css'}>CSS</Link>
-          </li>
-          <li>
-            <Link to={'/contact'}>CONTATO</Link>
-          </li>
-        </ul>
-      </div>
+      <div>{isMobile ? <MindorHeader /> : <LargerHeader />}</div>
     </S.Container>
   );
 };

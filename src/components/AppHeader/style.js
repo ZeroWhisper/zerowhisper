@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import colors from '~/styles/colors';
 import { css_width_page, css_margin_media_query } from '~/styles';
 
 export const Container = styled.div`
@@ -9,8 +8,8 @@ export const Container = styled.div`
 
   background-image: linear-gradient(
     135deg,
-    ${colors.background.might},
-    #30384b
+    rgb(24, 26, 27, 0.5),
+    rgba(48, 56, 75, 0.65)
   );
   color: #fff;
 
@@ -20,7 +19,6 @@ export const Container = styled.div`
   div {
     ${css_width_page};
     ${css_margin_media_query};
-    flex: 1;
     align-items: center;
 
     ul {
@@ -29,10 +27,11 @@ export const Container = styled.div`
       padding: 0 10px;
 
       li {
+        position: relative;
         font-size: 20px;
         font-weight: 400;
 
-        text-decoration: underline;
+        /* text-decoration: underline; */
         cursor: pointer;
 
         :nth-child(n) {
@@ -41,6 +40,24 @@ export const Container = styled.div`
 
         a {
           text-decoration: none;
+        }
+
+        /* Fonte: https://paulund.co.uk/css-animation-link-underline */
+        ::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          right: 0;
+          background-color: #fff;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+        }
+
+        :hover::after {
+          visibility: visible;
+          width: 100%;
         }
       }
     }

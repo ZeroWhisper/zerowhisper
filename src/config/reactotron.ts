@@ -33,10 +33,12 @@ export default {
       'development',
       process.env.NODE_ENV === 'development',
     );
+
     if (process.env.NODE_ENV === 'development') {
       let tron = this.getInstanceReactotron();
 
       if (tron) {
+        console.log('MONITOR R');
         const sagaMonitor = tron.createSagaMonitor!();
         sagaMiddleware = createSagaMiddleware({ sagaMonitor });
       }

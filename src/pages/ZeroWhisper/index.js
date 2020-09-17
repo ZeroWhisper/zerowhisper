@@ -1,17 +1,19 @@
 import React from 'react';
 
-import Header from './Header';
-import Body from './Body';
+// import Header from './Header';
+// import Body from './Body';
 
-import * as S from './style';
+// import * as S from './style';
+import { Redirect } from 'react-router-dom';
 
 const ZeroWhisper = props => {
-  return (
-    <S.Container>
-      <Header />
-      <Body />
-    </S.Container>
-  );
+  return <Redirect to={'/example'} />;
+  // return (
+  //   <S.Container>
+  //     <Header />
+  //     <Body />
+  //   </S.Container>
+  // );
 };
 
 export default ZeroWhisper;
