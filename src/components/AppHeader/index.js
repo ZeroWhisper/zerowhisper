@@ -9,7 +9,6 @@ import * as S from './style';
 const AppHeader = props => {
   // https://www.npmjs.com/package/react-responsive#easy-mode
   const isMobile = useMediaQuery({ maxWidth: 400 });
-  // return isMobile ? children : null
 
   return (
     <S.Container>

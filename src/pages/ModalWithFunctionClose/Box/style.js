@@ -2,9 +2,8 @@ import styled from 'styled-components';
 // import styled from 'styled-components/native';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
+  width: 660px;
+  height: 450px;
 
-  height: calc(100% - 90px);
-  padding: 15px;
+  color: black;
 `;

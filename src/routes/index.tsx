@@ -9,7 +9,7 @@ import StartGame from '~/pages/StartGame';
 import Example from '~/pages/Example';
 import ClickExample from '~/pages/ClickExample';
 // import YTFake from '~/pages/YTFake';
-import Trello from '~/pages/Trello';
+import ModalWithFunctionClose from '~/pages/ModalWithFunctionClose';
 import ExampleCSS from '~/pages/ExampleCSS';
 import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
@@ -27,8 +27,8 @@ const Routes: React.FC = props => {
       <Route path={'/geek'}>
         <GeekDashboard />
       </Route>
-      <Route path={'/trello'}>
-        <Trello />
+      <Route path={'/modal'}>
+        <ModalWithFunctionClose />
       </Route>
       <Route path={'/login'}>
         <LoginJWT />

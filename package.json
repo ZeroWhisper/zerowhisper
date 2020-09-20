@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "ndev": "next dev -p 5000",
-    "nbuild": "next build",
-    "nstart": "next start",
+    "n_dev": "next dev -p 5000",
+    "n_build": "next build",
+    "n_start": "next start",
     "stp": "react-app-rewired start PORT=80",
     "st": "react-app-rewired start",
     "st5000": "react-app-rewired start PORT=5000",
@@ -15,7 +15,7 @@
     "old_build": "react-scripts build",
     "test": "react-scripts test",
     "_eject": "react-scripts eject",
-    "cc": "concurrently --kill-others-on-fail \"yarn ndev\" \"yarn st\""
+    "cc": "concurrently --kill-others-on-fail \"yarn n_dev\" \"yarn st\""
   },
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
@@ -31,11 +31,13 @@
     "google-spreadsheet": "^3.0.13",
     "lz-string": "^1.4.4",
     "moment": "^2.26.0",
+    "next": "^9.5.3",
     "react": "^16.13.1",
     "react-beautiful-dnd": "^13.0.0",
     "react-dom": "^16.13.1",
     "react-google-login": "^5.1.20",
     "react-icons": "^3.10.0",
+    "react-modal": "^3.11.2",
     "react-phaser-fiber": "^0.2.4",
     "react-redux": "^7.2.0",
     "react-responsive": "^8.1.0",
