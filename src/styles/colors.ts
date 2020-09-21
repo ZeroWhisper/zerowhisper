@@ -17,6 +17,7 @@ export default {
     week: '#eaeaea',
   },
 
+
   status: {
     primary: 'rgb(0, 98, 204)',
     secondary: 'rgb(88, 95, 99)',
