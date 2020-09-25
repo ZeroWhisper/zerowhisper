@@ -220,3 +220,27 @@ export const SpanBoxCustom2 = styled.span`
     }
   }
 `;
+
+export const SpanBox3 = styled.span`
+  position: relative;
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+
+  span {
+    height: 40px;
+    width: 40px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 6px solid black;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+`;

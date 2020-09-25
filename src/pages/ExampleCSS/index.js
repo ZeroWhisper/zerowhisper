@@ -42,7 +42,11 @@ const ExampleCSS = () => {
               <span></span>
             </S.SpanBoxCustom2>
           </div>
-          <div></div>
+          <div>
+            <S.SpanBox3>
+              <span></span>
+            </S.SpanBox3>
+          </div>
           <div></div>
           <div></div>
           <div></div>
