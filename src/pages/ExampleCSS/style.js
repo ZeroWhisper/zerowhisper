@@ -244,3 +244,46 @@ export const SpanBox3 = styled.span`
     }
   }
 `;
+
+export const SpanBox4 = styled.span`
+  position: relative;
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+
+  span {
+    position: relative;
+    border: 1px solid #777;
+    width: 75px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 1s;
+    overflow: hidden;
+
+    &:before {
+      content: '✔️';
+      color: rgb(0, 90, 0);
+      background-color: #c1f1c8f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transform: translateY(-100%);
+      transition: all 0.5s;
+    }
+
+    &:hover:before {
+      transform: translateY(0);
+    }
+  }
+`;

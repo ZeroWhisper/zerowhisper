@@ -47,7 +47,11 @@ const ExampleCSS = () => {
               <span></span>
             </S.SpanBox3>
           </div>
-          <div></div>
+          <div>
+            <S.SpanBox4>
+              <span>HOVER</span>
+            </S.SpanBox4>
+          </div>
           <div></div>
           <div></div>
           <div></div>
