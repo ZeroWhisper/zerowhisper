@@ -1,19 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-//import * as Redux from 'react-redux';
-// import { View, Text } from 'react-native';
 
 import Rocketseat from '~/pages/Rocketseat';
 import LoginJWT from '~/pages/LoginJWT';
 import StartGame from '~/pages/StartGame';
 import Example from '~/pages/Example';
 import ClickExample from '~/pages/ClickExample';
-// import YTFake from '~/pages/YTFake';
 import ModalWithFunctionClose from '~/pages/ModalWithFunctionClose';
 import ExampleCSS from '~/pages/ExampleCSS';
 import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
 import Contact from '~/pages/Contact';
+import SocialDashboard from '~/pages/SocialDashboard';
 
 // import styles from './style';
 
@@ -50,6 +48,9 @@ const Routes: React.FC = props => {
       </Route>
       <Route path={'/contact'}>
         <Contact />
+      </Route>
+      <Route path={'/social'}>
+        <SocialDashboard />
       </Route>
     </Switch>
   );
