@@ -11,6 +11,26 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
   }
 
   html, body, #root {
@@ -18,6 +38,7 @@ export default createGlobalStyle`
       height: 100%;
       /* border: 10px solid red; */
     `}
+    min-width: 310px;
   }
 
   /*
