@@ -19,4 +19,5 @@ export const LocalStyles = createGlobalStyle`
 export const Container = styled.div`
   background-color: #181a22;
   height: 100vh;
+  overflow: auto;
 `;
