@@ -1,4 +1,4 @@
-If your want create a new project like this, just:
+- If your want create a new project like this, just:
 
 ```bash
   yarn global add create-react-app
