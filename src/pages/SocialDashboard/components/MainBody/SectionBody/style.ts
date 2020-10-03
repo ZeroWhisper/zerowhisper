@@ -54,6 +54,11 @@ export const StyledCard = styled.div`
 
     justify-content: center;
 
+    & > p {
+      display: flex;
+      align-items: center;
+    }
+
     & > * {
       text-align: center;
       color: rgb(140, 165, 198);
