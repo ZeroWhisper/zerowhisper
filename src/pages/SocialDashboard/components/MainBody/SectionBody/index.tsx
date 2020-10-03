@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebookSquare } from 'react-icons/fa';
-import { IoMdArrowDropup } from 'react-icons/io';
 import { MdArrowDropUp } from 'react-icons/md';
 // import { ImFacebook2 } from 'react-icons/';
 // import * as Redux from 'react-redux';
@@ -30,9 +29,9 @@ const Card = () => {
   return (
     <S.StyledCard>
       <div>
-        <a>
+        <p>
           <FaFacebookSquare size={24} /> @_ZeroWhisper
-        </a>
+        </p>
         <h2>2000</h2>
         <h5>Followers</h5>
         <span>
