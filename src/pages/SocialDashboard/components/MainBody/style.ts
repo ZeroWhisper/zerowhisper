@@ -36,6 +36,7 @@ export const Container = styled.div`
       border-radius: 25px;
 
       padding: 2px;
+      padding-left: 3px;
 
       :after {
         content: '';
