@@ -12,6 +12,7 @@ import GeekDashboard from '~/pages/GeekDashboard';
 import ZeroWhisper from '~/pages/ZeroWhisper';
 import Contact from '~/pages/Contact';
 import SocialDashboard from '~/pages/SocialDashboard';
+import OrbeSite from '~/pages/OrbeSite';
 
 // import styles from './style';
 
@@ -51,6 +52,9 @@ const Routes: React.FC = props => {
       </Route>
       <Route path={'/social'}>
         <SocialDashboard />
+      </Route>
+      <Route path={'/orbe'}>
+        <OrbeSite />
       </Route>
     </Switch>
   );
