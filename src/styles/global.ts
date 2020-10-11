@@ -80,6 +80,7 @@ export default createGlobalStyle`
     /* background-color: #F8397E; */
     /* background-color: #ffa340; */
     /* background-color: #fb4a21; */
+    /* background-color: #ffd900; */
     /* background-color: #fcf133; */
     /* background-color: #ff3a40; */
     -webkit-font-smoothing: antialiased;

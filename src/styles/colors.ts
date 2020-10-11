@@ -11,12 +11,12 @@ export default {
     primary_gradient:
       'linear-gradient(0deg, hsl(215, 60%, 65%), hsl(192, 64%, 60%))',
     seconday_gradient: 'linear-gradient(to bottom right, red, yellow)',
+    third_gradient: 'radial-gradient(120% 120%, red 30%, #000);',
   },
 
   border: {
     week: '#eaeaea',
   },
-
 
   status: {
     primary: 'rgb(0, 98, 204)',
