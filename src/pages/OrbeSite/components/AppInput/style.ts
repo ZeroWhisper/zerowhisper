@@ -1,3 +1,4 @@
+import { css_box_shadow } from '~/styles';
 import styled from 'styled-components';
 
 export interface ContainerProps {
@@ -6,15 +7,15 @@ export interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   height: 60px;
-  /* margin: 10px; */
+  border: 1px solid #eaeaea;
   border-radius: 8px;
-  /* background-image: radial-gradient(); */
   background-color: white;
 
   display: flex;
   align-items: center;
   padding: 0 10px;
   width: ${props => props.width || '100%'};
+  ${css_box_shadow};
 `;
 
 export interface IconProps {}
@@ -34,8 +35,8 @@ export const Input = styled.input`
   color: #333;
   caret-color: blueviolet;
   font-size: 25px;
-  /* font-family: Roboto; */
   font-weight: bold;
+  margin-left: 3px;
 
   width: 100%;
 `;

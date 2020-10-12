@@ -6,11 +6,18 @@ export const css_center = css`
   align-items: center;
 `;
 
+export const css_box_shadow_white = css`
+  /* params: cor largura_x largura_y blur */
+  box-shadow: rgba(255, 255, 255, 0.5) 3px 3px 2px;
+`;
+
 export const css_box_shadow = css`
-  box-shadow: 0 1px 4px 0 rgba(255, 255, 255, 0.5);
+  /* params: cor largura_x largura_y blur */
+  box-shadow: rgba(70, 70, 70, 0.5) 3px 3px 2px;
 `;
 
 export const css_box_shadow_blue = css`
+  /* params: cor largura_x largura_y blur */
   box-shadow: rgb(0, 115, 183) 0px 0px 6px;
 `;
 
