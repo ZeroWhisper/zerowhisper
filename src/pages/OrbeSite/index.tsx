@@ -3,8 +3,12 @@ import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 
 // import * as github from '~/services/api_github2';
-import TopBar from './components/TopBar';
-import AppInput from './components/AppInput';
+// import TopBar from './components/TopBar';
+// import AppInput from './components/AppInput';
+
+import ButtonJS from './components/1Atoms/ButtonJS';
+import InputJS from './components/1Atoms/InputJS';
+import Row from './components/2Molecules/Row';
 
 import * as S from './style';
 
@@ -42,13 +46,13 @@ function OrbeSite() {
 
   return (
     <S.Content>
-      <TopBar>
+      {/* <TopBar>
         <AppInput
           inputProps={{ type: 'text', defaultValue: 'Olá mundo' }}
           containerProps={{ width: '300px' }}
           Icon={<AiFillGithub size={30} />}
         />
-      </TopBar>
+      </TopBar> */}
       {/* <TopBar /> */}
       {/* <AppInput
         inputProps={{ type: 'text', defaultValue: 'Olá mundo' }}
@@ -57,6 +61,26 @@ function OrbeSite() {
       /> */}
       {/* I AM OrbeSite
       {git && <pre>{JSON.stringify(git, null, 2)}</pre>} */}
+      <Row>
+        <InputJS
+          Icon={AiFillGithub}
+          containerProps={{ style: { marginRight: 5 } }}
+          inputProps={{
+            onChange: (e: any) => {
+              console.log(e.target.value);
+            },
+          }}
+        />
+        <ButtonJS
+          Icon={AiFillGithub}
+          buttonProps={{
+            onClick: () => console.log('TESTE'),
+          }}
+          onClick={() => console.log('TESTE')}
+        >
+          Aperte
+        </ButtonJS>
+      </Row>
     </S.Content>
   );
 }
