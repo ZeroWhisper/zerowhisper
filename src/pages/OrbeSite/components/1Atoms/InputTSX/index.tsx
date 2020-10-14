@@ -3,20 +3,25 @@ import React from 'react';
 
 import * as S from './style';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  penca?: Number;
+}
 
 export interface IInputTSX {
   Icon?: React.ReactNode;
   inputProps?: InputProps;
   containerProps?: S.ContainerProps;
   iconProps?: S.IconProps;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => {};
 }
 
 function InputTSX(props: IInputTSX) {
+  const { Icon, containerProps, iconProps, inputProps, onChange } = props;
+
   return (
-    <S.Container {...props.containerProps}>
-      {props?.Icon && <S.Icon {...props.iconProps}>{props?.Icon}</S.Icon>}
-      <S.Input type={'text'} {...props.inputProps} />
+    <S.Container {...containerProps}>
+      {props?.Icon && <S.Icon {...iconProps}>{props?.Icon}</S.Icon>}
+      <S.Input type={'text'} onChange={onChange} {...inputProps} />
     </S.Container>
   );
 }

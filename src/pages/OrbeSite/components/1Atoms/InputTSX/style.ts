@@ -1,6 +1,8 @@
+import React from 'react';
 import { css_box_shadow } from '~/styles';
 import styled from 'styled-components';
 
+// export interface ContainerProps extends React.HTML<HTMLElement> {}
 export interface ContainerProps {
   width?: string | number;
 }

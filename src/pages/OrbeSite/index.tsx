@@ -8,6 +8,7 @@ import { AiFillGithub } from 'react-icons/ai';
 
 import ButtonJS from './components/1Atoms/ButtonJS';
 import InputJS from './components/1Atoms/InputJS';
+import InputTSX from './components/1Atoms/InputTSX';
 import Row from './components/2Molecules/Row';
 
 import * as S from './style';
@@ -44,6 +45,12 @@ function OrbeSite() {
   //   );
   // }
 
+  const obj = {
+    onChange: (e: any) => {
+      console.log('PENCAAAAA', e.target.value);
+    },
+  };
+
   return (
     <S.Content>
       {/* <TopBar>
@@ -66,9 +73,26 @@ function OrbeSite() {
           Icon={AiFillGithub}
           containerProps={{ style: { marginRight: 5 } }}
           inputProps={{
-            onChange: (e: any) => {
+            onChange: () => {
+              console.log('SOBRESCREVI');
+            },
+            type: 'password',
+          }}
+          onChange={(e: any) => {
+            console.log('VOLTA PENCA', e.target.value);
+          }}
+        />
+        <input type="password" onChange={() => console.log('SOBRESCREVI')} />
+        <InputTSX
+          containerProps={{ style: { marginRight: 5 } } as any}
+          inputProps={{
+            onChange: e => {
               console.log(e.target.value);
             },
+          }}
+          onChange={e => {
+            console.log(e.target.value);
+            return {};
           }}
         />
         <ButtonJS
@@ -76,7 +100,10 @@ function OrbeSite() {
           buttonProps={{
             onClick: () => console.log('TESTE'),
           }}
-          onClick={() => console.log('TESTE')}
+          // onClick={() => console.log('TESTE')}
+          // onClick={(e) => {
+          //   console.log(e);
+          // }}
         >
           Aperte
         </ButtonJS>

@@ -4,16 +4,29 @@ import React from 'react';
 import * as S from './style';
 
 function InputJS(props) {
-  const { containerProps, iconProps, inputProps, Icon } = props;
+  let { containerProps, iconProps, inputProps, onChange, Icon } = props;
+
+  // containerProps = {
+  //   onClick: e => console.log('SOCORRO LYANDRA!'),
+  //   onChange: e => {},
+  //   title: 'LOTE É O MELHOR PROJETO',
+  //   alt: 'ALT',
+  // };
 
   return (
-    <S.Container {...containerProps}>
+    <S.Container
+      {...containerProps}
+      // onClick={containerProps.onClick}
+      // onChange={containerProps.onChange}
+      // title={containerProps.title}
+      // alt={containerProps.alt}
+    >
       {Icon && (
         <span {...iconProps}>
           <Icon />
         </span>
       )}
-      <input type="text" {...inputProps} />
+      <input type="text" {...inputProps} onChange={onChange} />
     </S.Container>
   );
 }
