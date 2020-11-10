@@ -1,3 +1,8 @@
+#
+
+Erros possíveis com o CRA
+https://github.com/arackaf/customize-cra/issues/194
+
 - If your want create a new project like this, just:
 
 ```bash
