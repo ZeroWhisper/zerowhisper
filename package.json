@@ -6,7 +6,7 @@
     "n_dev": "next dev -p 5000",
     "n_build": "next build",
     "n_start": "next start",
-    "stp": "react-app-rewired start PORT=80",
+    "st80": "react-app-rewired start PORT=80",
     "st": "react-app-rewired start",
     "st5": "react-app-rewired start PORT=5000",
     "bld": "react-app-rewired build",
