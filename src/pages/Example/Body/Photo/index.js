@@ -4,7 +4,7 @@ import * as S from './style';
 
 const my_fac = 'https://www.facebook.com/marcos.zw10/';
 const my_pic =
-  'https://scontent.fccm1-1.fna.fbcdn.net/v/t31.0-8/18237897_1353277918097554_8793432821379965656_o.jpg?_nc_cat=111&_nc_sid=a4a2d7&_nc_ohc=O85TnUhN9pUAX8ihx0R&_nc_ht=scontent.fccm1-1.fna&oh=ea05c662e51613de7453f93044b8ce7d&oe=5F7D6A9D';
+  'https://scontent.fbnu1-1.fna.fbcdn.net/v/t31.0-8/26850781_1599546343470709_7148794200202495528_o.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=bvxHyrYNDuwAX-Wg8sK&_nc_ht=scontent.fbnu1-1.fna&oh=25302c0c4ae3519f5ecff1e4a21799e8&oe=5FD1C571';
 
 const Photo = props => {
   function redirect() {
