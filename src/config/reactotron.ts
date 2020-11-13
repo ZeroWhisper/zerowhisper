@@ -3,6 +3,10 @@ import { reactotronRedux } from 'reactotron-redux';
 import sagaPlugin from 'reactotron-redux-saga';
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga';
 
+/**
+ * Tomar cuidado com esse arquivo pra mobile ou web
+ */
+
 // Tuto for reactotron:
 // https://github.com/infinitered/reactotron/blob/master/docs/plugin-redux.md
 // https://github.com/infinitered/reactotron-react-native/issues/79
