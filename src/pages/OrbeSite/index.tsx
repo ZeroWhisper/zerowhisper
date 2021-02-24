@@ -9,7 +9,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import ButtonJS from './components/1Atoms/ButtonJS';
 import InputJS from './components/1Atoms/InputJS';
 import InputTSX from './components/1Atoms/InputTSX';
-import Row from './components/2Molecules/Row';
+// import Row from './components/2Molecules/Row';
 
 import * as S from './style';
 
@@ -68,7 +68,7 @@ function OrbeSite() {
       /> */}
       {/* I AM OrbeSite
       {git && <pre>{JSON.stringify(git, null, 2)}</pre>} */}
-      <Row>
+      {/* <Row>
         <InputJS
           Icon={AiFillGithub}
           containerProps={{ style: { marginRight: 5 } }}
@@ -107,7 +107,7 @@ function OrbeSite() {
         >
           Aperte
         </ButtonJS>
-      </Row>
+      </Row> */}
     </S.Content>
   );
 }

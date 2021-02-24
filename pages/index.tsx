@@ -1,14 +1,26 @@
 import React from 'react';
-// import * as Redux from 'react-redux';
-
-// import * as S from './style';
-
-interface IApp extends React.HTMLAttributes<HTMLDivElement> {}
+import { io } from 'socket.io-client';
 
 function App(_props: IApp) {
-  // const {} = _props;
+  const [message, setMessage] = React.useState('');
 
-  return <React.Fragment>I AM App</React.Fragment>;
+  React.useEffect(() => {
+    let socket = io();
+
+    socket.on('now', data => {
+      console.log('data', data);
+      setMessage(data);
+    });
+  }, [message]);
+
+  return (
+    <React.Fragment>
+      <div>Message: </div>
+      <pre>{message}</pre>
+    </React.Fragment>
+  );
 }
+
+interface IApp extends React.HTMLAttributes<HTMLDivElement> {}
 
 export default App;

@@ -1,6 +1,6 @@
 export interface StateReducer {
-  counter: integer;
-  clicks: integer;
+  counter: number;
+  clicks: number;
 }
 
 interface Action {
