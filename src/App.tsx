@@ -9,7 +9,6 @@ import reactotron from '~/config/reactotron';
 
 reactotron.getInstanceReactotron();
 
-//TEST
 const App: React.FC = () => {
   return (
     <Provider store={store}>
