@@ -11,7 +11,7 @@ let sagaMiddleware = reactotron.startReactotronMiddleware();
 
 const middlewares: Middleware[] = [];
 middlewares.push(sagaMiddleware);
-// middlewares.push(logger);
+middlewares.push(logger);
 
 const store = createStore(rootReducer, middlewares);
 
