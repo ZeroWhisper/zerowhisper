@@ -1,6 +1,11 @@
 import { Reducer, Middleware, createStore, applyMiddleware } from 'redux';
 
-import { RootState, StoreAction } from './modules/rootReducer';
+import { YTActions } from './modules/yt/types';
+import { GeekActions } from './modules/geek/types';
+
+import { RootState } from './modules/rootReducer';
+
+export type StoreAction = YTActions & GeekActions;
 
 type _reducers = Reducer<RootState, StoreAction>;
 type _middlewares = Middleware[];
