@@ -9,7 +9,7 @@ import reactotron from '~/config/reactotron';
 
 reactotron.getInstanceReactotron();
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Provider store={store}>
       <GlobalStyle />
