@@ -1,12 +1,12 @@
 import React from 'react';
 
-import api_github from '~/services/api_github';
-import AppContainer from '~/components/AppContainer';
+import api_github from '@/services/api_github';
+import AppContainer from '@/components/AppContainer';
 
 import { ContDiv, List } from './style';
 
 // eslint-disable-next-line
-const Rocketseat: React.FC = (props) => {
+const Rocketseat: React.FC = props => {
   const [repo, setRepo] = React.useState('ZeroWhisper/nodejs-graphql');
   const [store, setStore] = React.useState<Repository[]>([]);
 
@@ -15,7 +15,7 @@ const Rocketseat: React.FC = (props) => {
     console.log('TESTE', repo);
 
     const response = await api_github.get<Repository>(`/repos/${repo}`);
-    setStore((st) => [...st, response.data]);
+    setStore(st => [...st, response.data]);
     console.log('LIST', store);
   }
 
@@ -28,7 +28,7 @@ const Rocketseat: React.FC = (props) => {
             type="text"
             placeholder={'Digite o item de busca'}
             defaultValue={repo}
-            onChange={(e) => setRepo(e.target.value)}
+            onChange={e => setRepo(e.target.value)}
           />
           <button type="submit">ENVIAR</button>
         </form>

@@ -2,7 +2,7 @@ import React from 'react';
 // import * as Redux from 'react-redux';
 import { AiFillGithub } from 'react-icons/ai';
 
-// import * as github from '~/services/api_github2';
+// import * as github from '@/services/api_github2';
 // import TopBar from './components/TopBar';
 // import AppInput from './components/AppInput';
 

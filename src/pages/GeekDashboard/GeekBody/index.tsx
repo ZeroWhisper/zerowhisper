@@ -5,7 +5,7 @@ import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import TaskColumn from './TaskColumn';
 
 import { Container } from './style';
-import { RootState } from '~/store/modules/rootReducer';
+import { RootState } from '@/store/modules/rootReducer';
 
 const data = {
   columns: [

@@ -4,8 +4,8 @@ import { ActionType } from 'typesafe-actions';
 import * as ActionsYT from './actions';
 import * as YTTypes from './types';
 
-// import api_google from '~/services/api_google';
-import { RootState } from '~/app_redux/modules/rootReducer';
+// import api_google from '@/services/api_google';
+import { RootState } from '@/app_redux/modules/rootReducer';
 
 export function* request(action?: ActionType<YTTypes.YTActions>) {
   try {

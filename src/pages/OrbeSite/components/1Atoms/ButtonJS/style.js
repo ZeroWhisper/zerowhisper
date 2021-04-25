@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { css_box_shadow } from '~/styles';
+import { css_box_shadow } from '@/styles';
 
 export const Container = styled.button`
   height: 60px;

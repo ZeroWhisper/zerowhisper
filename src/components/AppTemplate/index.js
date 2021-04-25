@@ -1,8 +1,8 @@
 import React from 'react';
 
-import AppContainer from '~/components/AppContainer';
-import AppHeader from '~/components/AppHeader';
-import AppBody from '~/components/AppBody';
+import AppContainer from '@/components/AppContainer';
+import AppHeader from '@/components/AppHeader';
+import AppBody from '@/components/AppBody';
 
 const AppTemplate = ({ children }) => {
   return (

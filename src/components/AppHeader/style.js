@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { css_width_page, css_margin_media_query } from '~/styles';
+import { css_width_page, css_margin_media_query } from '@/styles';
 
 export const Container = styled.div`
   display: flex;

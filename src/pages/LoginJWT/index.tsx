@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { reducer, actions, stateInitial as initial } from '~/store_react';
+import { reducer, actions, stateInitial as initial } from '@/store_react';
 
 import { Content, CenterBox, LoginButton } from './style';
 

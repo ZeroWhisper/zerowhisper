@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsStar } from 'react-icons/bs';
 
-import AppTemplate from '~/components/AppTemplate';
+import AppTemplate from '@/components/AppTemplate';
 
 import * as S from './style';
 

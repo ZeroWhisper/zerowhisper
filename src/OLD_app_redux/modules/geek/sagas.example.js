@@ -1,7 +1,7 @@
 import { call, take, put } from 'redux-saga/effects';
-import rsf from '~/service/firebase';
+import rsf from '@/service/firebase';
 
-import { Creators as TaskCreators } from '~/app_redux/ducks/task';
+import { Creators as TaskCreators } from '@/app_redux/ducks/task';
 
 export function* taskChannel() {
   const channel = rsf.firestore.channel('task');

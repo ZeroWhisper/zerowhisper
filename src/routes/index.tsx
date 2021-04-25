@@ -1,29 +1,30 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Rocketseat from '~/pages/Rocketseat';
-import LoginJWT from '~/pages/LoginJWT';
-import StartGame from '~/pages/StartGame';
-import Example from '~/pages/Example';
-import ClickExample from '~/pages/ClickExample';
-import ModalWithFunctionClose from '~/pages/ModalWithFunctionClose';
-import ExampleCSS from '~/pages/ExampleCSS';
-import GeekDashboard from '~/pages/GeekDashboard';
-import ZeroWhisper from '~/pages/ZeroWhisper';
-import Contact from '~/pages/Contact';
-import SocialDashboard from '~/pages/SocialDashboard';
-import OrbeSite from '~/pages/OrbeSite';
+// import Rocketseat from '@/pages/Rocketseat';
+// import LoginJWT from '@/pages/LoginJWT';
+// import StartGame from '@/pages/StartGame';
+// import Example from '@/pages/Example';
+// import ClickExample from '@/pages/ClickExample';
+// import ModalWithFunctionClose from '@/pages/ModalWithFunctionClose';
+// import ExampleCSS from '@/pages/ExampleCSS';
+// import GeekDashboard from '@/pages/GeekDashboard';
+// import ZeroWhisper from '@/pages/ZeroWhisper';
+// import Contact from '@/pages/Contact';
+// import SocialDashboard from '@/pages/SocialDashboard';
+// import OrbeSite from '@/pages/OrbeSite';
 
 // import styles from './style';
 
-const Routes: React.FC = props => {
+const Routes = (_props: any) => {
   return (
     <Switch>
       <Route exact path={'/'}>
         {/* <Rocketseat /> */}
-        <ZeroWhisper />
+        {/* <ZeroWhisper /> */}
+        <p>Teste</p>
       </Route>
-      <Route path={'/geek'}>
+      {/* <Route path={'/geek'}>
         <GeekDashboard />
       </Route>
       <Route path={'/modal'}>
@@ -55,7 +56,7 @@ const Routes: React.FC = props => {
       </Route>
       <Route path={'/orbe'}>
         <OrbeSite />
-      </Route>
+      </Route> */}
     </Switch>
   );
 };

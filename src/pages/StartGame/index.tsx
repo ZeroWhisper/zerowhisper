@@ -2,11 +2,11 @@ import React from 'react';
 import { Game, Scene, Text } from 'react-phaser-fiber';
 //import * as Redux from 'react-redux';
 
-import AppContainer from '~/components/AppContainer';
+import AppContainer from '@/components/AppContainer';
 
 import { Content } from './style';
 
-const StartGame: React.FC = (props) => {
+const StartGame: React.FC = props => {
   return (
     <AppContainer>
       <Content>
@@ -15,7 +15,8 @@ const StartGame: React.FC = (props) => {
           height={480}
           physics={{
             default: 'arcade',
-          }}>
+          }}
+        >
           <Scene sceneKey="main">
             <Text
               x={100}

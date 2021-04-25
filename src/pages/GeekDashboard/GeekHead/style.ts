@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import colors from '~/styles/colors';
+import colors from '@/styles/colors';
 // import styled from 'styled-components/native';
 
 export const Container = styled.div`

@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 const {
   override,
@@ -11,7 +11,7 @@ const moduleResolver = [
   {
     root: ['./src/'],
     alias: {
-      '~': './src',
+      '@': './src',
     },
   },
 ];

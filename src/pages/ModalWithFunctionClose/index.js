@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-import AppTemplate from '~/components/AppTemplate';
+import AppTemplate from '@/components/AppTemplate';
 
 import Box from './Box';
 

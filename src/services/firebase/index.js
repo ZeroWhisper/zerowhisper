@@ -1,4 +1,4 @@
-import * as _ from '~/services/stash';
+import * as _ from '@/services/stash';
 // import firebase from 'firebase';
 // import '@firebase/firestore';
 // import ReduxSagaFirebase from 'redux-saga-firebase';

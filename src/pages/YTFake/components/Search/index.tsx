@@ -2,8 +2,8 @@ import React from 'react';
 import * as Redux from 'react-redux';
 import { GrSearch } from 'react-icons/gr';
 
-import { RootState } from '~/store/modules/rootReducer';
-import * as ActionsYT from '~/store/modules/yt/actions';
+import { RootState } from '@/store/modules/rootReducer';
+import * as ActionsYT from '@/store/modules/yt/actions';
 
 import { Content } from './style';
 

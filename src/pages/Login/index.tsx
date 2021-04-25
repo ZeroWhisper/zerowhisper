@@ -6,7 +6,7 @@ import { GoogleLogin, GoogleLoginResponse } from 'react-google-login';
 // let auth2 = await loadAuth2(clientId, scopes);
 // let auth2 = await loadAuth2WithProps({ /* object with props from gapi */ });
 
-import AppContainer from '~/components/AppContainer';
+import AppContainer from '@/components/AppContainer';
 
 import { Content, VideoList, BoxLogin } from './style';
 
@@ -16,7 +16,7 @@ const key = '8KJEqAS-9tjyAkD1pSey8lle';
 
 // let scopes = {};
 
-const Login: React.FC = (props) => {
+const Login: React.FC = props => {
   // const url = 'https://www.googleapis.com/youtube/v3';
   const [user, setUser] = React.useState<GoogleLoginResponse>();
 
@@ -78,9 +78,9 @@ export default Login;
 // import { connect } from 'react-redux';
 // import { Dispatch } from 'redux';
 
-// import { ApplicationState } from '~/store';
-// import LoginActions from '~/store/ducks/login/actions';
-// import AppContainer from '~/components/AppContainer';
+// import { ApplicationState } from '@/store';
+// import LoginActions from '@/store/ducks/login/actions';
+// import AppContainer from '@/components/AppContainer';
 
 // const Login: React.FC<Props> = (props) => {
 //   async function handleInput(e: FormEvent<HTMLFormElement>): Promise<void> {

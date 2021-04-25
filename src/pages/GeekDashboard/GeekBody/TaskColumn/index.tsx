@@ -1,7 +1,7 @@
 import React from 'react';
 import { Droppable } from 'react-beautiful-dnd';
 
-import { Task } from '~/store/modules/geek/types';
+import { Task } from '@/store/modules/geek/types';
 
 import GeekCard from './components/GeekCard';
 import { Container } from './style';

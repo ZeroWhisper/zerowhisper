@@ -1,18 +1,22 @@
 import React from 'react';
 
-import AppContainer from '~/components/AppContainer';
+import AppContainer from '@/components/AppContainer';
 // import { Provider } from 'react-redux';
 // import { BrowserRouter } from 'react-router-dom';
 
 // import { store } from './store';
 // import GlobalStyle from './styles/global';
-// import Routes from './routes';
-// import reactotron from '~/config/reactotron';
+import Routes from './routes';
+// import reactotron from '@/config/reactotron';
 
 // reactotron.getInstanceReactotron();
 
 const App = () => {
-  // return <AppContainer />
+  return (
+    <AppContainer>
+      <Routes />
+    </AppContainer>
+  );
   // return (
   //   <Provider store={store}>
   //     <GlobalStyle />

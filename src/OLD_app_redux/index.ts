@@ -1,7 +1,7 @@
 import { Middleware } from 'redux';
 import { logger } from 'redux-logger';
 
-import reactotron from '~/utils/Reactotron';
+import reactotron from '@/utils/Reactotron';
 
 import createStore from './createStore';
 import rootReducer from './modules/rootReducer';

@@ -4,8 +4,8 @@ import { ActionType } from 'typesafe-actions';
 // import * as ActionsYT from './actions';
 // import * as YTTypes from './types';
 
-// import api_google from '~/services/api_google';
-// import { StoreApp } from '~/store/createStore';
+// import api_google from '@/services/api_google';
+// import { StoreApp } from '@/store/createStore';
 
 export function* request() {
   try {

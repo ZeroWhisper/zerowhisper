@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import colors from '~/styles/colors';
-import { css_box_shadow_blue } from '~/styles';
+import colors from '@/styles/colors';
+import { css_box_shadow_blue } from '@/styles';
 
 const non_allow_selection = css`
   -webkit-touch-callout: none; /* iOS Safari */

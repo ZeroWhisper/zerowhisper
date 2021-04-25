@@ -1,8 +1,8 @@
 import React from 'react';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { unstash } from '~/services/stash';
+import { unstash } from '@/services/stash';
 
-import AppTemplate from '~/components/AppTemplate';
+import AppTemplate from '@/components/AppTemplate';
 
 import * as S from './style';
 import { key, file } from './key';

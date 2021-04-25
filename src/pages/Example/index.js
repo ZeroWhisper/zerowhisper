@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AppTemplate from '~/components/AppTemplate';
+import AppTemplate from '@/components/AppTemplate';
 
 import Body from './Body';
 
