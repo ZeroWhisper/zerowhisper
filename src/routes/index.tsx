@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import AppPage from '@/components/AppPage';
+
 // import Rocketseat from '@/pages/Rocketseat';
 // import LoginJWT from '@/pages/LoginJWT';
 // import StartGame from '@/pages/StartGame';
@@ -22,7 +24,7 @@ const Routes = (_props: any) => {
       <Route exact path={'/'}>
         {/* <Rocketseat /> */}
         {/* <ZeroWhisper /> */}
-        <p>Teste</p>
+        <AppPage />
       </Route>
       {/* <Route path={'/geek'}>
         <GeekDashboard />

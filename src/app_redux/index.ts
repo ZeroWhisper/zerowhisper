@@ -28,7 +28,6 @@ const persistedReducer = persistReducer(
   {
     key: 'root',
     storage: StashStorage,
-    whitelist: ['login', 'app_global', 'app_default'],
   },
   rootReducer,
 );

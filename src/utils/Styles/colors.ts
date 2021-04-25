@@ -1,4 +1,4 @@
-export default {
+const GlobalColors = {
   fonts: {
     primary: 'rgb(232, 230, 227)',
     secondary: 'rgb(157, 148, 136)',
@@ -12,6 +12,8 @@ export default {
       'linear-gradient(0deg, hsl(215, 60%, 65%), hsl(192, 64%, 60%))',
     seconday_gradient: 'linear-gradient(to bottom right, red, yellow)',
     third_gradient: 'radial-gradient(120% 120%, red 30%, #000);',
+    fourth_gradient:
+      'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);',
   },
 
   border: {
@@ -31,3 +33,5 @@ export default {
   darkTransparent: 'rgba(0, 0, 0, 0.6)',
   whiteTransparent: 'rgba(255, 255, 255, 0.5)',
 };
+
+export { GlobalColors };
