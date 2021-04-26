@@ -1,0 +1,104 @@
+<svg width="1400" height="980" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <filter height="116.2" width="200.1" y="646.9" x="896.2" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter"/>
+   <linearGradient y2="0.41586" x2="0.52839" y1="0.58429" x1="0.47191" id="SVGID_2_">
+    <stop stop-color="#808080" offset="0"/>
+    <stop stop-color="#656565" offset="0.1023"/>
+    <stop stop-color="#3A3A3A" offset="0.2934"/>
+    <stop stop-color="#1A1A1A" offset="0.4652"/>
+    <stop stop-color="#070707" offset="0.6098"/>
+    <stop stop-color="#000000" offset="0.7097"/>
+   </linearGradient>
+   <linearGradient y2="0.41546" x2="0.52833" y1="0.58389" x1="0.47186" id="SVGID_5_">
+    <stop stop-color="#808080" offset="0"/>
+    <stop stop-color="#656565" offset="0.1023"/>
+    <stop stop-color="#3A3A3A" offset="0.2934"/>
+    <stop stop-color="#1A1A1A" offset="0.4652"/>
+    <stop stop-color="#070707" offset="0.6098"/>
+    <stop stop-color="#000000" offset="0.7097"/>
+   </linearGradient>
+   <linearGradient y2="0.41583" x2="0.52829" y1="0.58426" x1="0.47182" id="SVGID_8_">
+    <stop stop-color="#808080" offset="0"/>
+    <stop stop-color="#656565" offset="0.1023"/>
+    <stop stop-color="#3A3A3A" offset="0.2934"/>
+    <stop stop-color="#1A1A1A" offset="0.4652"/>
+    <stop stop-color="#070707" offset="0.6098"/>
+    <stop stop-color="#000000" offset="0.7097"/>
+   </linearGradient>
+   <linearGradient y2="0.41588" x2="0.52824" y1="0.58431" x1="0.47175" id="SVGID_11_">
+    <stop stop-color="#808080" offset="0"/>
+    <stop stop-color="#656565" offset="0.1023"/>
+    <stop stop-color="#3A3A3A" offset="0.2934"/>
+    <stop stop-color="#1A1A1A" offset="0.4652"/>
+    <stop stop-color="#070707" offset="0.6098"/>
+    <stop stop-color="#000000" offset="0.7097"/>
+   </linearGradient>
+  </defs>
+  <mask id="SVGID_1_" height="116.2" width="200.1" y="646.9" x="896.2" maskUnits="userSpaceOnUse">
+   <g id="svg_420" filter="url(#Adobe_OpacityMaskFilter)">
+    <defs>
+     <filter height="116.2" width="200.1" y="646.9" x="896.2" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_1_"/>
+    </defs>
+    <mask id="SVGID_1_" height="116.2" width="200.1" y="646.9" x="896.2" maskUnits="userSpaceOnUse">
+     <g id="svg_421" filter="url(#Adobe_OpacityMaskFilter_1_)"/>
+    </mask>
+    <polygon id="svg_422" points="896.2,659.6 1074.3,763.1 1096.3,750.4 918.3,646.9    " fill="url(#SVGID_2_)" mask="url(#SVGID_1_)"/>
+   </g>
+  </mask>
+  <defs>
+   <filter height="116.2" width="200.1" y="604.5" x="970.1" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_2_"/>
+  </defs>
+  <mask id="SVGID_4_" height="116.2" width="200.1" y="604.5" x="970.1" maskUnits="userSpaceOnUse">
+   <g id="svg_424" filter="url(#Adobe_OpacityMaskFilter_2_)">
+    <defs>
+     <filter height="116.2" width="200.1" y="604.5" x="970.1" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_3_"/>
+    </defs>
+    <mask id="SVGID_4_" height="116.2" width="200.1" y="604.5" x="970.1" maskUnits="userSpaceOnUse">
+     <g id="svg_425" filter="url(#Adobe_OpacityMaskFilter_3_)"/>
+    </mask>
+    <polygon id="svg_426" points="970.1,617.2 1148.2,720.7 1170.2,707.9 992.2,604.5    " fill="url(#SVGID_5_)" mask="url(#SVGID_4_)"/>
+   </g>
+  </mask>
+  <defs>
+   <filter height="116.2" width="200.1" y="570.4" x="1029.1" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_4_"/>
+  </defs>
+  <mask id="SVGID_7_" height="116.2" width="200.1" y="570.4" x="1029.1" maskUnits="userSpaceOnUse">
+   <g id="svg_428" filter="url(#Adobe_OpacityMaskFilter_4_)">
+    <defs>
+     <filter height="116.2" width="200.1" y="570.4" x="1029.1" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_5_"/>
+    </defs>
+    <mask id="SVGID_7_" height="116.2" width="200.1" y="570.4" x="1029.1" maskUnits="userSpaceOnUse">
+     <g id="svg_429" filter="url(#Adobe_OpacityMaskFilter_5_)"/>
+    </mask>
+    <polygon id="svg_430" points="1029.1,583.1 1207.2,686.6 1229.2,673.9 1051.1,570.4    " fill="url(#SVGID_8_)" mask="url(#SVGID_7_)"/>
+   </g>
+  </mask>
+  <defs>
+   <filter height="116.2" width="200.1" y="527.8" x="1102.9" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_6_"/>
+  </defs>
+  <mask id="SVGID_10_" height="116.2" width="200.1" y="527.8" x="1102.9" maskUnits="userSpaceOnUse">
+   <g id="svg_432" filter="url(#Adobe_OpacityMaskFilter_6_)">
+    <defs>
+     <filter height="116.2" width="200.1" y="527.8" x="1102.9" filterUnits="userSpaceOnUse" id="Adobe_OpacityMaskFilter_7_"/>
+    </defs>
+    <mask id="SVGID_10_" height="116.2" width="200.1" y="527.8" x="1102.9" maskUnits="userSpaceOnUse">
+     <g id="svg_433" filter="url(#Adobe_OpacityMaskFilter_7_)"/>
+    </mask>
+    <polygon id="svg_434" points="1102.9,540.5 1280.9,644 1302.9,631.3 1124.9,527.8    " fill="url(#SVGID_11_)" mask="url(#SVGID_10_)"/>
+   </g>
+  </mask>
+  <g id="svg_474">
+   <polygon id="svg_475" points="0,73.4000244140625 127.10005187988281,0 305.2000427246094,103.5 178.1000518798828,176.9000244140625 " fill="#F1F2F2"/>
+   <polygon id="svg_476" points="162.90000915527344,34.800048828125 59.4000244140625,94.5 24.10003662109375,73.4000244140625 127.10005187988281,14 " fill="#39B54A"/>
+   <g id="svg_478">
+    <path id="svg_477" d="m178.10002,169.10002l-0.2,-0.1l-164.4,-95.6l113.6,-65.6l0.2,0.1l164.4,95.6l-113.6,65.6zm-162.6,-95.7l162.7,94.5l111.6,-64.5l-162.7,-94.5l-111.6,64.5z" fill="#414042"/>
+   </g>
+   <g id="svg_480">
+    <path id="svg_479" d="m178.20002,163.00002l-0.2,-0.1l-155.9,-89.5l0.8,-0.4l104.2,-60.2l0.2,0.1l155.8,90.6l-0.8,0.4l-104.1,59.1zm-154.1,-89.6l154.1,88.4l102.9,-58.3l-154.1,-89.5l-102.9,59.4z" fill="#414042"/>
+   </g>
+   <polygon id="svg_481" points="0,73.4000244140625 0,76.4000244140625 178.1000518798828,179.9000244140625 305.2000427246094,106.5 305.2000427246094,103.5 178.1000518798828,176.9000244140625 " fill="#E6E7E8"/>
+  </g>
+ </g>
+</svg>
