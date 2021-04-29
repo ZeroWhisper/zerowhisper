@@ -20,3 +20,5 @@ type OnlyForm = Pick<INITIAL_TYPE, 'form'>;
 const F: OnlyForm = {} as any;
 F.form;
 ```
+
+<!-- Teste -->
