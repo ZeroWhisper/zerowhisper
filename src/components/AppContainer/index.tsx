@@ -6,6 +6,9 @@ import { store } from '@/app_redux';
 
 import * as S from './style';
 
+/**
+ * Esse componente deve ser usado pra envolver o Routers
+ */
 function AppContainer(_props: IAppContainer) {
   const { children } = _props;
 

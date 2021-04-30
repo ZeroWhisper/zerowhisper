@@ -26,6 +26,10 @@ const Routes = (_props: any) => {
         {/* <ZeroWhisper /> */}
         <AppPage />
       </Route>
+      <Route exact path={'/health'}>
+        <p>OK</p>
+      </Route>
+
       {/* <Route path={'/geek'}>
         <GeekDashboard />
       </Route>
