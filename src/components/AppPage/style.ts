@@ -7,8 +7,8 @@ export const Container = styled.div`
   display: flex;
   flex: 1;
 
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   color: gold;
 
-  border: 1px solid white;
+  /* border: 1px solid white; */
 `;
 
 export const Card = styled.div`

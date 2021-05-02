@@ -12,7 +12,6 @@ function AppPage(_props: IAppPage) {
   return (
     <WrapSnow snow_size={1}>
       <S.Container>
-        {/* <p>Teste</p> */}
         <ReactLogo title={'Board'} />
         <S.Card>
           <span>TEXT</span>
