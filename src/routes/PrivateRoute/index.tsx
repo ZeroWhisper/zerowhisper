@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router';
+import { Route } from 'react-router-dom';
 // import * as Redux from 'react-redux';
 
 // import * as S from './style';
@@ -12,10 +13,18 @@ function PrivateRoute(_props: IPrivateRoute) {
   }
 
   if (component) {
-    return component;
+    return (
+      <Route exact path={'/'}>
+        {component}
+      </Route>
+    );
   }
 
-  return children;
+  return (
+    <Route exact path={'/'}>
+      {children}
+    </Route>
+  );
 }
 
 interface IPrivateRoute extends React.HTMLAttributes<HTMLDivElement> {
