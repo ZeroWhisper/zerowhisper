@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
+  name: 'main',
   colors: {
     primary: '#0070f3',
   },
