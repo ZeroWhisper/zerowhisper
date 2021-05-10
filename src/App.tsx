@@ -5,7 +5,7 @@ import AppContainer from '@/components/AppContainer';
 import Routes from './routes';
 
 function App(_props: IApp) {
-  // const {} = _props;
+  const {} = _props;
 
   return (
     <AppContainer>
