@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
     "st": "yarn && yarn start",
     "t": "yarn build && serve -s build -l 3000",
     "a": "yarn start",
@@ -25,6 +26,7 @@
     "lodash": "^4.17.21",
     "lz-string": "^1.4.4",
     "natural-orderby": "^2.0.3",
+    "next": "^10.2.0",
     "polished": "^4.1.1",
     "react": "^17.0.1",
     "react-beautiful-dnd": "^13.1.0",
