@@ -16,7 +16,8 @@ interface IState {
 
 interface IActions {
   setText: (text: string) => void;
-  fetch: (props: { text: string; page: number }) => void;
+  request: (props: { text: string; page: number }) => void;
+  counter: (payload?: number) => void;
 }
 
 interface IContext {
@@ -34,65 +35,50 @@ const store = createContext<IContext>({
   state: initialState,
 });
 
+interface ActionType {
+  type: 'UM' | 'DOIS' | 'COUNT';
+  payload: any;
+}
+
 const { Provider } = store;
 
-const reducer = (state: IState, action: { type: string; payload: any }) => {
+const reducer = (state: IState, action: ActionType) => {
   let new_state = state;
 
   switch (action.type) {
-    // case 'searching':
-    //   return {
-    //     ...state,
-    //     loading: true,
-    //     error: null,
-    //     data: [],
-    //     count: 0,
-    //   };
-    // case 'success':
-    //   return {
-    //     ...state,
-    //     loading: false,
-    //     error: null,
-    //   };
-    case 'set-text':
+    case 'UM':
       new_state = { ...state, data: action.payload };
       return new_state;
 
-    // case 'error':
-    //   return {
-    //     ...state,
-    //     loading: false,
-    //     error: action.payload,
-    //     data: [],
-    //     count: 0,
-    //   };
+    case 'DOIS':
+      new_state = { ...state, data: action.payload };
+      return new_state;
+
+    case 'COUNT':
+      console.log('VOU ATUALIZAR');
+      new_state = { ...state, count: action.payload };
+      return new_state;
+
     default:
       return new_state;
   }
 };
 
-const PaginationProvider = ({ children }: { children: React.ReactNode }) => {
+const AppGlobalProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const actions: IActions = {
-    setText: useCallback(payload => dispatch({ type: 'error', payload }), []),
+    setText: useCallback(payload => dispatch({ type: 'UM', payload }), []),
 
-    fetch: useCallback(payload => dispatch({ type: 'error', payload }), []),
+    request: useCallback(payload => dispatch({ type: 'DOIS', payload }), []),
+
+    counter: useCallback(payload => {
+      console.log('Opa, estou aqui', payload);
+      dispatch({ type: 'COUNT', payload });
+    }, []),
   };
-
-  // const setSearching = ({ text, page }) =>
-  //   dispatch({ type: 'searching', text, page });
-
-  // const setError = error => dispatch({ type: 'error', error });
-
-  // const setSuccess = ({ data, count }) =>
-  //   dispatch({ type: 'success', data, count });
-
-  // const fetch = useCallback(({ text, page }) => {}, []);
-
-  // const setText = (payload: any) => dispatch({ type: 'set-text', payload });
 
   return <Provider value={{ state, actions }}>{children}</Provider>;
 };
 
-export { store, PaginationProvider };
+export { store, AppGlobalProvider };

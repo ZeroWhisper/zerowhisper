@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import AppPage from '@/components/AppPage';
+import UsingContext from '@/pages/UsingContext';
 
 // import Rocketseat from '@/pages/Rocketseat';
 // import LoginJWT from '@/pages/LoginJWT';
@@ -25,6 +26,9 @@ const Routes = (_props: any) => {
         {/* <Rocketseat /> */}
         {/* <ZeroWhisper /> */}
         <AppPage />
+      </Route>
+      <Route path={'/context'}>
+        <UsingContext />
       </Route>
       <Route exact path={'/health'}>
         <p>OK</p>
