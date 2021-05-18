@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-// import * as Redux from 'react-redux';
+
 import {
   AppGlobalProvider,
   store as AppGlobalContext,
 } from '@/contexts/app_global';
+
 import { Route, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
 
