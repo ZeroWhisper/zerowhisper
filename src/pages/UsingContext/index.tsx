@@ -8,11 +8,7 @@ import {
 import { Route, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
 
-// import * as S from './style';
-
 function UsingContext(_props: IUsingContext) {
-  // const {} = _props;
-
   return (
     <AppGlobalProvider>
       <p>teste 123 </p>
@@ -34,7 +30,7 @@ function UsingContext(_props: IUsingContext) {
 const InnerButton = () => {
   const { state, actions } = useContext(AppGlobalContext);
 
-  const nextCount = (state.count || 0) + 1;
+  const nextCount = state.count ? state.count + 1 : 1;
 
   return <button onClick={() => actions?.counter(nextCount)}>CLICK ME</button>;
 };
