@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import AppPage from '@/components/AppPage';
 import UsingContext from '@/pages/UsingContext';
+import Google from '@/pages/Google';
 
 // import Rocketseat from '@/pages/Rocketseat';
 // import LoginJWT from '@/pages/LoginJWT';
@@ -30,8 +31,13 @@ const Routes = (_props: any) => {
       <Route path={'/context'}>
         <UsingContext />
       </Route>
+
       <Route exact path={'/health'}>
         <p>OK</p>
+      </Route>
+
+      <Route exact path={'/google'}>
+        <Google />
       </Route>
 
       {/* <Route path={'/geek'}>
