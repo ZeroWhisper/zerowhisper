@@ -3,12 +3,14 @@ import React from 'react';
 import AppContainer from '@/components/AppContainer';
 
 import Routes from './routes';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App(_props: IApp) {
   // const {} = _props;
 
   return (
     <AppContainer>
+      <GlobalStyles />
       <Routes />
     </AppContainer>
   );
