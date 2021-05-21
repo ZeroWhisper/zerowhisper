@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
   & > :nth-child(1) {
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   /* & > :nth-child(1) {

@@ -85,7 +85,7 @@ export default createGlobalStyle`
     /* background-color: #ff3a40; */
     -webkit-font-smoothing: antialiased;
     /* background-image: linear-gradient(45deg, #30384B, #323FFF, #30384B); */
-    background-image: linear-gradient(90deg, #104A70, #30384B);
+    /* background-image: linear-gradient(90deg, #104A70, #30384B); */
     /* display: flex; */
     /* flex: 1; */
     /* width: 100%; */
