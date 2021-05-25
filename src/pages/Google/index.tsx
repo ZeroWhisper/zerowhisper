@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Icons from 'react-icons/all';
+// import { useSelector } from 'react-redux';
 
 import * as S from './style';
 
@@ -7,6 +8,10 @@ const url =
   'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png';
 
 function Google(_props: IGoogle) {
+  // useSelector((state) => {
+  //   state.
+  // })
+
   return (
     <S.Container>
       <S.DivLogo>
