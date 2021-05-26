@@ -1,4 +1,4 @@
-import 'styled-componets';
+// import 'styled-componets';
 import 'react-redux';
 
 import { RootState } from './modules/rootReducer';
@@ -11,8 +11,8 @@ declare module 'react-redux' {
 
 // type ThemeLight = CustomThemeType;
 
-declare module 'styled-components' {
-  export interface DefaultTheme {}
-}
+// declare module 'styled-components' {
+//   export interface DefaultTheme {}
+// }
 
 export {};
