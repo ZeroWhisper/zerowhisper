@@ -77,8 +77,6 @@ export const DivSearch = styled.div`
     background-color: white;
     border-radius: 40px;
     border: 0.5px solid gray;
-    /* border: 1px solid green; */
-    /* box-shadow: rgba(70, 70, 70, 0.5) 3px 3px 2px; */
     box-shadow: 5px 5px 15px -6px #000000;
     transition: box-shadow 2s;
 
