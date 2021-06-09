@@ -1,5 +1,15 @@
 #
 
+Dimensões:
+
+- Extra small: <576px
+- Small: ≥576px
+- Medium: ≥768px
+- Large: ≥992px
+- Extra large: ≥1200px
+
+Fonte: https://getbootstrap.com/docs/4.0/layout/grid/
+
 Erros possíveis com o CRA
 https://github.com/arackaf/customize-cra/issues/194
 
