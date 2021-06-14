@@ -1,14 +1,14 @@
 import { Middleware } from 'redux';
 import { createLogger } from 'redux-logger';
 import { persistStore, persistReducer } from 'redux-persist';
-// import storage from 'redux-persist/lib/storage';
-
-import reactotron from '@/utils/Reactotron';
-import StashStorage from '@/utils/StashStorage';
+import storage from 'redux-persist/lib/storage';
 
 import createStore from './createStore';
 import rootReducer from './modules/rootReducer';
 import rootSaga from './modules/rootSaga';
+
+import StashStorage from './utils/StashStorage';
+import reactotron from './utils/Reactotron';
 
 let sagaMiddleware = reactotron.startReactotronMiddleware();
 
@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 const persistedReducer = persistReducer(
   {
     key: 'root',
-    storage: StashStorage,
+    storage: process.env.NODE_ENV === 'development' ? storage : StashStorage,
   },
   rootReducer,
 );
