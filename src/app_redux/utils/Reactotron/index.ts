@@ -30,7 +30,7 @@ interface IConfigTron {
   getInstanceReactotron(): A;
 }
 
-const isEnvDev = process.env.NODE_ENV === 'development';
+const isDev = process.env.NODE_ENV === 'development';
 
 export default {
   tron: null,
@@ -45,11 +45,11 @@ export default {
     // );
 
     // if (process.env.NODE_ENV === 'development') {
-    if (isEnvDev) {
+    if (isDev) {
       let tron = this.getInstanceReactotron();
 
       if (tron) {
-        console.log('MONITOR R');
+        // console.log('MONITOR R');
         const sagaMonitor = tron.createSagaMonitor!();
         sagaMiddleware = createSagaMiddleware({ sagaMonitor });
       }
@@ -68,9 +68,9 @@ export default {
       console.tron = this.tron;
 
       this.tron.clear!();
-      isEnvDev && console.log('CREATING REACTOTRON...');
+      isDev && console.log('CREATING REACTOTRON...');
     } else {
-      isEnvDev && console.log('ALREADY UP REACTOTRON');
+      isDev && console.log('ALREADY UP REACTOTRON');
     }
 
     return this.tron;
