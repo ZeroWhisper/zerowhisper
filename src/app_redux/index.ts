@@ -18,7 +18,8 @@ middlewares.push(sagaMiddleware);
 
 if (process.env.NODE_ENV === 'development') {
   const logger = createLogger({
-    predicate: (getState, action) => action.type !== 'global/SETTING',
+    // Fazer o logger não exibir determinada Action (se true então exibe)
+    predicate: (_getState, action) => action.type !== 'global/SETTING',
   });
 
   middlewares.push(logger);
