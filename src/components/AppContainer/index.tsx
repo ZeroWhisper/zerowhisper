@@ -1,6 +1,5 @@
 import React from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
 
 import { store } from '@/app_redux';
 
@@ -14,9 +13,7 @@ function AppContainer(_props: IAppContainer) {
 
   return (
     <ReduxProvider store={store}>
-      <BrowserRouter>
-        <S.Container>{children}</S.Container>
-      </BrowserRouter>
+      <S.Container>{children}</S.Container>
     </ReduxProvider>
   );
 }
