@@ -25,8 +25,6 @@ const Routes = (_props: any) => {
     <BrowserRouter>
       <Switch>
         <Route exact path={'/'}>
-          {/* <Rocketseat /> */}
-          {/* <ZeroWhisper /> */}
           <AppPage />
         </Route>
         <Route path={'/context'}>
