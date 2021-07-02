@@ -21,6 +21,8 @@ import Google from '@/pages/Google';
 // import styles from './style';
 
 const Routes = (_props: any) => {
+  const {} = _props;
+
   return (
     <BrowserRouter>
       <Switch>
