@@ -10,7 +10,7 @@ function App(_props: IApp) {
 
   return (
     <AppContainer>
-      <GlobalStyles />
+      {/* <GlobalStyles /> */}
       <Routes />
     </AppContainer>
   );
