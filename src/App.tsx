@@ -6,7 +6,7 @@ import Routes from './routes';
 import GlobalStyles from './styles/GlobalStyles';
 
 function App(_props: IApp) {
-  // const {} = _props;
+  const {} = _props;
 
   return (
     <AppContainer>
