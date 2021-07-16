@@ -4,6 +4,7 @@ import { combineReducers } from 'redux';
 import * as app_default from './app_default';
 
 export type StoreAction = app_default.Actions;
+// | login.Actions;
 
 const rootReducer = combineReducers({
   app_default: app_default.reducer,
