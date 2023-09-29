@@ -3,5 +3,5 @@
 export function Welcome() {
   // const {} = _props;
 
-  return <div>Olá mundo</div>;
+  return <div>Hello world</div>;
 }
