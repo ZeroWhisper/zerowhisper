@@ -4,7 +4,7 @@ export function Welcome() {
   // const {} = _props;
 
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
+    <div style={{ display: "flex", gap: "16px" }}>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           Vite
