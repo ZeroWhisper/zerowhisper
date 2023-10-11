@@ -1,25 +1,61 @@
 import { useFormik } from "formik";
 
-import { api } from "../../services/api";
+// import { api } from "../../services/api";
 
 import { WelcomeContainer } from "./style";
+
+import axios from "axios";
+
+const baseURL = "http://localhost:3333";
+const api = axios.create({ baseURL });
 
 export function Welcome() {
   const formik = useFormik({
     initialValues: {
       question: "",
     },
-    onSubmit: async ({ question }, helper) => {
+    onSubmit: async ({ question }) => {
       alert(question);
 
-      const prompt = new URLSearchParams();
-      prompt.append("prompt", question);
+      const body = {
+        url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
+        method: "GET",
+      };
 
-      const result = await api.get(prompt.toString());
+      const response = await api.post("http://localhost:3333", body);
 
-      console.log("### result", result);
+      // const response = await axios.post("http://localhost:3333/fix-cors", {
+      //   url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
+      //   method: "GET",
+      // });
 
-      helper.resetForm();
+      // const response = await fetch('http://localhost:3333/fix-cors', {
+      //   body: {
+      //     url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
+      //     method: "GET",
+      //   }
+      // })
+
+      // const prompt = new URLSearchParams();
+      // prompt.append("prompt", question);
+
+      // const result = await api.get(prompt.toString());
+
+      // console.log("### result", prompt.toString());
+
+      // https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?
+      // const url = "https://gptfree.appgps.com.br/" + prompt.toString();
+
+      // const response = await fetch(url, {
+      //   headers: {
+      //     // "Access-Control-Allow-Origin": "*",
+      //     "Access-Control-Allow-Origin": "https://gptfree.appgps.com.br/",
+      //   },
+      // });
+
+      console.log("### response", response);
+
+      // helper.resetForm();
     },
   });
 
