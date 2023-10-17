@@ -1,61 +1,39 @@
+import Typewriter from "typewriter-effect";
 import { useFormik } from "formik";
+import { useState } from "react";
 
-// import { api } from "../../services/api";
+import { chatApi } from "~/services/chat-api";
 
 import { WelcomeContainer } from "./style";
 
-import axios from "axios";
-
-const baseURL = "http://localhost:3333";
-const api = axios.create({ baseURL });
+type InterationType = {
+  question: string;
+  answer: string;
+};
 
 export function Welcome() {
+  const [messages, setMessages] = useState<InterationType[]>([]);
+
   const formik = useFormik({
     initialValues: {
       question: "",
     },
-    onSubmit: async ({ question }) => {
-      alert(question);
-
+    onSubmit: async ({ question }, helper) => {
       const body = {
-        url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
+        url: "https://gptfree.appgps.com.br",
         method: "GET",
+        query: `prompt=${question}`,
       };
 
-      const response = await api.post("http://localhost:3333", body);
+      try {
+        const response = await chatApi.post<ResponseRoot>("/cors", body);
 
-      // const response = await axios.post("http://localhost:3333/fix-cors", {
-      //   url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
-      //   method: "GET",
-      // });
+        setMessages([...messages, { question, answer: response.data.answer }]);
 
-      // const response = await fetch('http://localhost:3333/fix-cors', {
-      //   body: {
-      //     url: "https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?",
-      //     method: "GET",
-      //   }
-      // })
-
-      // const prompt = new URLSearchParams();
-      // prompt.append("prompt", question);
-
-      // const result = await api.get(prompt.toString());
-
-      // console.log("### result", prompt.toString());
-
-      // https://gptfree.appgps.com.br/prompt=What%20day%20is%20today?
-      // const url = "https://gptfree.appgps.com.br/" + prompt.toString();
-
-      // const response = await fetch(url, {
-      //   headers: {
-      //     // "Access-Control-Allow-Origin": "*",
-      //     "Access-Control-Allow-Origin": "https://gptfree.appgps.com.br/",
-      //   },
-      // });
-
-      console.log("### response", response);
-
-      // helper.resetForm();
+        helper.setFieldValue("question", "");
+      } catch (e) {
+        console.info("Error on try to do a request");
+      }
     },
   });
 
@@ -75,8 +53,36 @@ export function Welcome() {
         </div>
       </form>
       <div>
-        <div className="box-output">ASDASD</div>
+        {messages.map(({ question, answer }, index) => {
+          return (
+            <div className="box-output" key={index}>
+              <div>
+                <span>{index + 1}. </span>
+                <span>{question}</span>
+              </div>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString(answer).start();
+                }}
+              />
+            </div>
+          );
+        })}
       </div>
     </WelcomeContainer>
   );
+}
+
+export interface ResponseRoot {
+  answer: string;
+  responseTime: string;
+  respondingProvider: string;
+  serverDateTime: string;
+  developerInfo: DeveloperInfo;
+}
+
+export interface DeveloperInfo {
+  nome: string;
+  numero: string;
+  email: string;
 }
