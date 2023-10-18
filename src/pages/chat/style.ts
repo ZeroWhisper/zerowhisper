@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const WelcomeContainer = styled.div`
+export const ChatContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;

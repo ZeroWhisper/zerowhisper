@@ -4,14 +4,14 @@ import { useState } from "react";
 
 import { chatApi } from "~/services/chat-api";
 
-import { WelcomeContainer } from "./style";
+import { ChatContainer } from "./style";
 
 type InterationType = {
   question: string;
   answer: string;
 };
 
-export function Welcome() {
+export function ChatPage() {
   const [messages, setMessages] = useState<InterationType[]>([]);
 
   const formik = useFormik({
@@ -38,8 +38,8 @@ export function Welcome() {
   });
 
   return (
-    <WelcomeContainer>
-      <title>I'm Welcome</title>
+    <ChatContainer>
+      <title>I'm Chat</title>
       <form className="input-core" onSubmit={formik.handleSubmit}>
         <div>Type your question:</div>
         <div className="input-row">
@@ -69,7 +69,7 @@ export function Welcome() {
           );
         })}
       </div>
-    </WelcomeContainer>
+    </ChatContainer>
   );
 }
 
