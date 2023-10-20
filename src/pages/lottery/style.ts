@@ -12,13 +12,40 @@ export const Container = styled.div`
     display: flex;
     padding: 2rem;
     gap: 1rem;
+
+    flex-wrap: wrap;
+  }
+
+  .config-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
   }
 
   .game {
     display: flex;
     border: 1px solid gold;
     flex-direction: column;
-    background-color: #82967e;
+    background-color: greenyellow;
+    color: blueviolet;
+
+    .prized {
+      background-color: goldenrod;
+    }
 
     > span {
       display: flex;
@@ -40,5 +67,10 @@ export const Container = styled.div`
         border: 1px solid white;
       }
     }
+  }
+  .menus {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
   }
 `;
