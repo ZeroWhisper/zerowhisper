@@ -4,6 +4,7 @@ import { ChatPage } from "~/pages/chat";
 import { ErrorPage } from "~/pages/error";
 import { TailPage } from "./pages/tail";
 import { LotteryPage } from "./pages/lottery";
+import { ReactMotionPage } from "./pages/react-motion";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
           <li>
             <NavLink to="/lottery">Lottery Page</NavLink>
           </li>
+          <li>
+            <NavLink to="/react-motion">React Motion</NavLink>
+          </li>
         </ul>
       </div>
     ),
@@ -42,6 +46,11 @@ const router = createBrowserRouter([
   {
     path: "/lottery",
     element: <LotteryPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/react-motion",
+    element: <ReactMotionPage />,
     errorElement: <ErrorPage />,
   },
 ]);
