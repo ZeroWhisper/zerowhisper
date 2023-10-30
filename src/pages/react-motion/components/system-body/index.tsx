@@ -1,3 +1,8 @@
+import { ReactNode } from "react";
+
+import { List } from "./components/list";
+import { Accordion } from "./components/accordion";
+
 export const BodySystem = () => {
   // const {} = _props;
 
@@ -11,23 +16,31 @@ export const BodySystem = () => {
         flexDirection: "column",
       }}
     >
-      <BadgeBorder>1</BadgeBorder>
-      <BadgeBorder>1</BadgeBorder>
+      <BadgeBorder>
+        <h2>List Example</h2>
+        <List />
+      </BadgeBorder>
+      <BadgeBorder>
+        <h2>Accordion</h2>
+        <Accordion />
+      </BadgeBorder>
       <BadgeBorder>1</BadgeBorder>
     </div>
   );
 };
 
-export const BadgeBorder = ({ children }: any) => {
+export const BadgeBorder = ({ children }: { children: ReactNode }) => {
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         borderRadius: "1rem",
         borderWidth: 1,
         borderStyle: "solid",
         borderColor: "white",
-        padding: "0.5rem",
+        padding: "1rem 0.5rem",
+        backgroundColor: "#eaeaea",
       }}
     >
       {children}

@@ -136,16 +136,21 @@ function TodoListItem({
     <li
       style={{
         display: "flex",
+        alignItems: "center",
         justifyContent: "space-between",
-        lineHeight: "2rem",
+        // lineHeight: "2rem",
         padding: "0.35rem 1rem",
-        backgroundColor: "rgb(239 239 239 / 70%)",
+        border: "1px solid white",
+        borderRadius: "0.5rem",
+        // backgroundColor: "rgb(239 239 239 / 70%)",
+        backgroundColor: "brown",
       }}
     >
       {todo.text}
       <button
         type="button"
         title="Delete this item"
+        style={{ border: "none" }}
         onClick={() =>
           setTodos((todos) => todos.filter((t) => t.id !== todo.id))
         }
