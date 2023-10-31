@@ -10,11 +10,13 @@ export const Accordion = () => {
     >
       <div
         style={{
-          backgroundColor: "rgba(238, 238, 238)",
+          // backgroundColor: "rgba(238, 238, 238)",
+          backgroundColor: "lightgreen",
           padding: "1rem",
           borderRadius: 12,
           margin: "1rem 0",
           overflow: "hidden",
+          color: "black",
         }}
       >
         <button
