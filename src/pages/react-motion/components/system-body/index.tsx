@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import { List } from "./components/list";
 import { Accordion } from "./components/accordion";
+import { UnderlineTabs } from "./components/underline-tabs";
 
 export const BodySystem = () => {
   // const {} = _props;
@@ -15,6 +16,7 @@ export const BodySystem = () => {
         margin: "1.1rem 0.5rem",
         flexDirection: "column",
       }}
+      className="text-slate-900"
     >
       <BadgeBorder>
         <h2>List Example</h2>
@@ -24,7 +26,10 @@ export const BodySystem = () => {
         <h2>Accordion</h2>
         <Accordion />
       </BadgeBorder>
-      <BadgeBorder>1</BadgeBorder>
+      <BadgeBorder>
+        <h2>Underline Tabs</h2>
+        <UnderlineTabs />
+      </BadgeBorder>
     </div>
   );
 };
