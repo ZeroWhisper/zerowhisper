@@ -13,6 +13,7 @@ export const ReactMotionPage = () => {
         display: "flex",
       }}
     >
+      <div>1</div>
       <Sidebar />
       <BodySystem />
     </div>
