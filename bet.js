@@ -1,10 +1,11 @@
-const odd1 = 1.3;
-const odd2 = 6;
+const odd1 = 1.7;
+const odd2 = 3;
 
 var totalTimes = 0;
 var totalTimesStop = 10000;
 var mxRange = 500;
 var finish = false;
+var howSimilarIsTheBet = 5;
 
 function prt(i, j) {
   console.group("DADOS");
@@ -33,11 +34,11 @@ for (let i = mxRange; i > 100; i--) {
         prt(i, j);
         finish = true;
       }
-      if (result1 < result2 && result1 > result2 - 10) {
+      if (result1 < result2 && result1 > result2 - howSimilarIsTheBet) {
         prt(i, j);
         finish = true;
       }
-      if (result1 > result2 && result1 < result2 + 10) {
+      if (result1 > result2 && result1 < result2 + howSimilarIsTheBet) {
         prt(i, j);
         finish = true;
       }
