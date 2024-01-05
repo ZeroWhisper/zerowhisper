@@ -1,16 +1,20 @@
-const odd1 = 1.7;
-const odd2 = 3;
+const odd1 = 2.85;
+const odd2 = 3.3;
 
 var totalTimes = 0;
 var totalTimesStop = 10000;
-var mxRange = 500;
+var mxRange = 200;
 var finish = false;
-var howSimilarIsTheBet = 5;
+var howSimilarIsTheBet = 2;
 
 function prt(i, j) {
   console.group("DADOS");
-  console.log("Valor Aposta 1", i);
-  console.log("Valor Aposta 2", j);
+  console.log("ODD 1", odd1);
+  console.log("ODD 2", odd2);
+  console.log("");
+  console.log("Aposta 1", i);
+  console.log("Aposta 2", j);
+  console.log("Total Aposta", i + j);
   console.log("");
   console.log("PREMIO 1", i * odd1);
   console.log("PREMIO 2", j * odd2);
@@ -19,10 +23,10 @@ function prt(i, j) {
 
 console.log("INICIO!");
 
-for (let i = mxRange; i > 100; i--) {
+for (let i = mxRange; i > 50; i--) {
   var result1 = odd1 * i;
 
-  for (let j = 100; j < mxRange; j++) {
+  for (let j = 50; j < mxRange; j++) {
     totalTimes = totalTimes + 1;
 
     let result2 = odd2 * j;
