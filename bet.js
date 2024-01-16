@@ -1,9 +1,9 @@
-const odd1 = 1.86;
-const odd2 = 3.5;
+const odd1 = 2.45;
+const odd2 = 3.15;
 
 var totalTimes = 0;
 var totalTimesStop = 10000;
-var mxRange = 120;
+var mxRange = 440;
 var finish = false;
 var betProximity = 1.5;
 
