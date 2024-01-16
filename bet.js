@@ -3,7 +3,7 @@ const odd2 = 3.15;
 
 var totalTimes = 0;
 var totalTimesStop = 10000;
-var mxRange = 440;
+var mxRange = 500;
 var finish = false;
 var betProximity = 1.5;
 
