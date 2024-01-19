@@ -1,5 +1,5 @@
 const odd1 = 2.45;
-const odd2 = 2.7;
+const odd2 = 2.75;
 
 var totalTimes = 0;
 var totalTimesStop = 10000;
